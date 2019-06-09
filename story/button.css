@@ -1,0 +1,117 @@
+/* text */
+.box{
+	margin: auto;
+	margin-top: 70px;
+	width: 1200px;
+}
+.back{
+	position: absolute;
+	top:170px;
+	left: 180px;
+	width: 750px;
+	height: 650px;
+	padding:50px 50px 0px 50px;
+	z-index: 1;
+	background-color: #60787B;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 20px 20px 20px 20px;
+}
+.text{
+	padding-bottom: 10px;
+    color:burlywood;
+    font-size: 26px;
+    font-family: monospace;
+	text-indent: 50px;
+}
+
+/* button */
+nav{
+	float: right;
+	margin-top: 7px;
+}
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    border: 2px solid transparent;
+	/*hover前*/
+    /*border-left-color: silver;*/
+    padding-left: 2em;
+    transition: 500ms;
+    margin: 1em 0;
+    text-align: center;
+}
+
+li:hover {
+    border-left-color:rgba(87,87,105,1.00);
+}
+
+li span {
+	/*字体颜色_before*/
+    color:rgba(87,87,105,1.00);
+    font-size: 40px;
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: relative;
+    transition: 500ms;
+}
+
+li:hover span {
+	/*字体颜色_after*/
+    color:#89DCAD;
+    transition-delay: calc(80ms * var(--n) + 10ms);
+}
+
+li span::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    transition: 500ms;
+}
+
+li:hover span::before {
+    width: 70%;
+	/*bg color_after*/
+    background-color:#1D1D1D;
+    transform: rotate(-25deg);
+    transition-delay: calc(80ms * var(--n));
+}
+
+li span:nth-child(1) {
+    --n: 1;
+}
+
+li span:nth-child(2) {
+    --n: 2;
+}
+
+li span:nth-child(3) {
+    --n: 3;
+}
+
+li span:nth-child(4) {
+    --n: 4;
+}
+
+li span:nth-child(5) {
+    --n: 5;
+}
+
+li span:nth-child(6) {
+    --n: 6;
+}
+
+li span:nth-child(7) {
+    --n: 7;
+}
+
+li span:nth-child(8) {
+    --n: 8;
+}

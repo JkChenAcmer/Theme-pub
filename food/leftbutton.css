@@ -1,0 +1,81 @@
+/* 菜单 */
+nav{
+	align-items: center;
+	position: relative;
+	margin-top: 52px;
+	margin-left: 52px;
+	float: left;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    width: 8em;
+    height: 2em;
+    font-size: 25px;
+    color:#081F18;
+    box-sizing: border-box;
+    border-left: 0.08em solid;
+    position: relative;
+    margin-top: 0.8em;
+    cursor: pointer;
+}
+
+nav li::before,
+nav li::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    border-left: 0.08em solid;
+    z-index: -1;
+}
+
+nav li::before {
+    height: 80%;
+    top: 10%;
+    left: -0.3em;
+    filter: brightness(0.8);
+}
+
+nav li::after {
+    height: 60%;
+    top: 20%;
+    left: -0.55em;
+    filter: brightness(0.6);
+}
+
+nav li:hover span {
+    transform: translateX(0.15em);
+}
+
+nav li span {
+    position: relative;
+    height: 120%;
+    top: -10%;
+    box-sizing: border-box;
+    border: 0.08em solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transform: translateX(-0.65em);
+	background-color: #A6E5AD;
+    transition: 0.3s;
+}
+
+/* 图片 */
+.Picture{
+	float: left;
+	margin-top: 20px;
+	margin-left: 189px;
+	width: 1250px;
+	height: 780px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(img/0.png);
+}

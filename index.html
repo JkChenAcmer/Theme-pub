@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<title>Jk_Chen's Haven</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./head.css">
+	<link rel="stylesheet" href="Six/css/style.css">
+</head>
+	
+<body>
+
+<!--head-->
+	<header class="head">
+		<h1>欢迎来到我的酒馆 <span>今日特价：鱼人盛宴</span></h1>
+	</header>
+	
+<!--Main-->
+	<nav id="hexNav">
+	  <div id="menuBtn" style="cursor: pointer">
+		<svg viewbox="0 0 100 100">
+		  <polygon points="50 2 7 26 7 74 50 98 93 74 93 26" fill="transparent" stroke-width="4" stroke="#585247" stroke-dasharray="0,0,300"/>
+		</svg>
+		<span></span>
+	  </div>
+	  <ul id="hex">
+
+		  <!--食物-->
+		<li class="tr"><div class="clip"><a href="./food/index.html" class="content">
+		  <img src="Six/img/1.jpg" alt="" />
+		  <p>为这位客人点菜。</p>
+		</a></div></li>
+
+		  <!--Document-->
+		<li class="tr" style="visibility: hidden"><div class="clip"><a href="./document/index.html" class="content">
+		  <img src="Six/img/3.jpg" alt="" />
+		  <h2 class="title">Administrator</h2><p>Take your eyes off my book!</p>
+	  </a></div></li>
+
+		  <!--故事-->
+		<li class="tr"><div class="clip"><a href="./story/index.html" class="content">
+		  <img src="Six/img/2.jpg" alt="" />
+		  <p>来说说你的故事吧！</p>
+		</a></div></li>
+
+		  <!---->
+		<li class="tr" style="visibility: hidden"><div class="clip"><a href="#" class="content">
+		  <img src="Six/img/4.jpg" alt="" />
+		  <h2 class="title">Title</h2><p>Catch phrase</p>
+		</a></div></li>
+
+		  <!--Music-->
+		<li class="tr"><div class="clip"><a href="./audioplayer/index.html" class="content">
+		  <img src="Six/img/5.jpg" alt="" />
+		  <p>要来点音乐吗？</p>
+		</a></div></li>
+
+		  <!--Website-->
+		<li class="tr" style="visibility: hidden"><div class="clip"><a href="conllect" class="content">
+		  <img src="Six/img/6.jpg" alt="" />
+		  <h2 class="title">Hunter</h2><p>What my web caught?</p>
+		</a></div></li>
+	  </ul>
+	</nav>
+	
+<!--foot-->
+	<div class="foot">
+		<p>
+			来一场华丽的冒险！
+		</p>
+	</div>
+
+	
+
+<!--菜单动画-->
+<script type="text/javascript">
+	var hexNav = document.getElementById('hexNav');
+
+	document.getElementById('menuBtn').onclick = function() {
+		var className = ' ' + hexNav.className + ' ';
+		if ( ~className.indexOf(' active ') ) {
+			hexNav.className = className.replace(' active ', ' ');
+		} else {
+			hexNav.className += ' active';
+		}              
+	}
+</script>
+</body>
+
+</html>

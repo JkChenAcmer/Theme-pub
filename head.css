@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html{
+	height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  background: center fixed no-repeat;
+  background-size: 100% 100%;
+  background: linear-gradient(-65deg, #43C6AC, #F8FFAE);
+}
+
+/* Head */
+.head{
+	padding: 1em 190px 1em;
+	letter-spacing: -1px;
+	text-align: center;
+	background: #66677c;
+}
+.head h1 {
+	color: #D5D6E2;
+	font-weight: 600;
+	font-size: 2em;
+	line-height: 1;
+	margin-bottom: 0;
+	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+}
+.head h1 span {
+	font-family: "Microsoft YaHei","宋体","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif, FreeSans, Arimo;
+	display: block;
+	font-size: 60%;
+	font-weight: 400;
+	padding: 0.8em 0 0.5em 0;
+	color: #c3c8cd;
+}
+/* foot */
+.foot {
+	position:absolute;
+	width: 100%;
+	bottom: 0;
+	color: #fff;
+	background: #494A5F;
+	text-align: center;
+	font-size: 1.25em;
+	padding: 0.5em 0;
+	overflow: hidden;
+}
